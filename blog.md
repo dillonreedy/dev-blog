@@ -9,7 +9,7 @@ nav-menu: true
 <section id="one">
 	<div class="inner">
 		<header class="major">
-			<h1>I made another blog</h1>
+			<h1>I Made Another Blog</h1>
 		</header>
 
 <!-- Content -->
@@ -28,7 +28,3 @@ nav-menu: true
 
 <h2 id="content">Moving forward</h2>
 <p>I don't wanna add anything technical to this site, I really wanna keep it as simple as possible to add more blog content, so don't do it if you're thinking about it Dillon. All the best!</p>
-</div>
-
-</section>
-</div>
