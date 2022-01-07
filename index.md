@@ -4,7 +4,7 @@ title: Home
 landing-title: "Hi, my name is Dillon"
 description: null
 image: null
-author: null
+author: Dillon Reedy
 show_tile: false
 ---
 
