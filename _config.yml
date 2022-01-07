@@ -1,17 +1,17 @@
 # site settings
-title: Forty
-subtitle: by HTML5 UP
+title: Perfect Syntax
+subtitle: Blog
 email: dillon.reedy123@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
+description: A blog about anything on my mind
 baseurl: "/dev-blog" # the subpath of your site, e.g. /blog
 url: https://dillonreedy.github.io # the base hostname & protocol for your site
 author: Dillon Reedy
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
+street_address:
+city: Houston
+state: TX
+zip_code:
 country: United States of America
-phone: 678-340-0018
+phone:
 
 # homepage tiles
 tiles-source: pages # accepts "posts" or "pages"
