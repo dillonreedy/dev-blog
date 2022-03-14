@@ -1,0 +1,19 @@
+{
+  "name": "dev-blog",
+  "version": "1.0.0",
+  "description": "Website for displaying projects",
+  "main": "index.js",
+  "scripts": {
+    "serve": "bundle exec jekyll serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dillonreedy/dev-blog.git"
+  },
+  "author": "Dillon Reedy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dillonreedy/dev-blog/issues"
+  },
+  "homepage": "https://github.com/dillonreedy/dev-blog#readme"
+}
