@@ -19,7 +19,7 @@ To add another generic post: `npm run add-page`
 This will prompt you for a page title, description, and image file name
 then it will create a file in the root directory of the project.
 
-The contents of this post are things that could help
+Generic page content is placed into the body of the page.
 
 ### Build Locally
 
