@@ -4,7 +4,8 @@
   "description": "Website for displaying projects",
   "main": "index.js",
   "scripts": {
-    "serve": "bundle exec jekyll serve"
+    "serve": "bundle exec jekyll serve",
+    "add-post": "node ./file-scripts/create-post.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/dillonreedy/dev-blog/issues"
   },
-  "homepage": "https://github.com/dillonreedy/dev-blog#readme"
+  "homepage": "https://github.com/dillonreedy/dev-blog#readme",
+  "dependencies": {
+    "inquirer": "^8.2.1"
+  }
 }

@@ -1,7 +1,27 @@
-# How to start locally
+# Creating new posts and serving locally:
 
-Run the following command in the terminal
-`bundle exec jekyll serve`
+## Creating a new Post
+
+### Install npm packages
+
+If you have just cloned this project then run the following command: `npm install`
+Note this does not install the ruby gem files and things needed for Jekyll, this is
+only used for creating a new templated post.
+
+### Add command
+
+To add another generic post: `npm run add-post`
+This will prompts to get varying fields, then it will create a file in the relative
+path location to the \_posts folder within the project.
+
+## Serve Locally
+
+To run the project locally `npm run serve`
+
+## Publishing Posts
+
+Once you're satisfied with how the post is displayed, you can simply push your changes onto
+the main branch, and then Github Actions will build the site.
 
 # Forty - Jekyll Theme
 
