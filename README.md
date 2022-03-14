@@ -1,6 +1,11 @@
 # Creating new posts and serving locally:
 
-## Creating a new Post
+## Creating a new page
+
+### Add a Page Image for Landing Page
+
+You'll need to add an image that can be placed in the tiles on the landing page.
+It must be a .jpg file, the first page we mades image consisted of dimensions: 1567x981.
 
 ### Install npm packages
 
@@ -10,11 +15,17 @@ only used for creating a new templated post.
 
 ### Add command
 
-To add another generic post: `npm run add-post`
-This will prompts to get varying fields, then it will create a file in the relative
-path location to the \_posts folder within the project.
+To add another generic post: `npm run add-page`
+This will prompt you for a page title, description, and image file name
+then it will create a file in the root directory of the project.
 
-## Serve Locally
+The contents of this post are things that could help
+
+### Build Locally
+
+To build the project locally `npm run build`
+
+### Serve Locally
 
 To run the project locally `npm run serve`
 

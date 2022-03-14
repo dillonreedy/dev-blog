@@ -4,8 +4,9 @@
   "description": "Website for displaying projects",
   "main": "index.js",
   "scripts": {
+    "build": "jekyll build --trace",
     "serve": "bundle exec jekyll serve",
-    "add-post": "node ./file-scripts/create-post.js"
+    "add-page": "node ./file-scripts/create-page.js"
   },
   "repository": {
     "type": "git",

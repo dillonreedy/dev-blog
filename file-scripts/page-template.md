@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: { { title } }
 description: { { description } }
-image: assets/images/pic01.jpg
+image: { { image } }
 nav-menu: true
 ---
 

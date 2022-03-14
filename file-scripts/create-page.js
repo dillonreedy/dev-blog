@@ -2,14 +2,7 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
 
-const postTemplateFileName = 'post-template.md'
-
-function getFormattedDate() {
-    const dateString = new Date().toISOString();
-    const timeIndex = dateString.indexOf('T');
-    const formattedDateString = dateString.substring(0, timeIndex);
-    return formattedDateString;
-}
+const postTemplateFileName = 'page-template.md'
 
 function getFileContents() {
     try {
@@ -21,7 +14,7 @@ function getFileContents() {
 }
 
 const createFile = (async (formattedInputs, data) => {
-    fs.writeFile(formattedInputs.postTitle, data, function (err) {
+    fs.writeFile(formattedInputs.pagePath, data, function (err) {
         if (err) throw err;               
         
         console.log('Results Received');
@@ -31,21 +24,25 @@ const createFile = (async (formattedInputs, data) => {
 inquirer
 .prompt([
     {
-    name: 'title',
-    message: 'What is the title of your post?'
+        name: 'title',
+        message: 'What is the title of your page?'
     },
     {
         name: 'description',
         message: 'Describe your post:'
     },
+    {
+        name: 'image',
+        message: 'Provide banner image file name in assets/images (must be a .jpg file):'
+    }
 ])
 .then(answers => {
     const genericFileContents = getFileContents();
-    answers['formattedTitle'] = answers.title.toLowerCase().replace(/\s/g, '-');
-    answers['formattedDate'] = getFormattedDate();
-    answers['postTitle'] = `./_posts/${answers.formattedDate}-${answers.formattedTitle}.md`;
+    answers['formattedTitle'] = answers.title.toLowerCase().replace(/\s/g, '_');
+    answers['pagePath'] = `./${answers.formattedTitle}.md`;
     const replacedFileContents = genericFileContents.replace('{ { title } }', answers.title)
-                                                    .replace('{ { description } }', answers.description);
+                                                    .replace('{ { description } }', answers.description)
+                                                    .replace('{ { image } }', `assets/images/${answers.image}.jpg`);
 
     createFile(answers, replacedFileContents);
 });
