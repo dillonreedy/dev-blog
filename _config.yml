@@ -42,3 +42,7 @@ exclude:
   - LICENSE.md
   - CONTRIBUTING.md
   - README.md
+  - package.json
+  - package-lock.json
+  - /node_modules/*
+  - /file-scripts/*
