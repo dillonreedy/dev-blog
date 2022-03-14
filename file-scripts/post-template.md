@@ -1,7 +1,7 @@
 ---
 layout: post
 title: { { title } }
-description: A guide for markdown elements
+description: { { description } }
 image: assets/images/pic01.jpg
 nav-menu: true
 ---
