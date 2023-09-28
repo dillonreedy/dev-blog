@@ -10,9 +10,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Setup RVM and install Ruby
+        run: |
+          sudo apt-get install software-properties-common
+          sudo apt-add-repository -y ppa:rael-gc/rvm
+          sudo apt-get update
+          sudo apt-get install rvm
+          echo 'source "/etc/profile.d/rvm.sh"' >> ~/.bashrc
+          source /etc/profile.d/rvm.sh
+          rvm install ruby-3.0.2
+          rvm --default use ruby-3.0.2
 
-      - name: Update RubyGems
-        run: gem update --system
+      - name: Show Ruby and RubyGems versions
+        run: |
+          ruby -v
+          gem -v
 
       - uses: helaili/jekyll-action@v2
         with:
